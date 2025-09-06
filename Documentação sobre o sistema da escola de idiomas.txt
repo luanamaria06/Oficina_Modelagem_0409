@@ -1,0 +1,37 @@
+Sistema de uma escola de idiomas
+
+Explicação do meu diagrama.
+
+Temos a entidade Aluno que tem seus atributos: o Id_aluno como identificador, o Cpf e o Nome.
+
+Temos a entidade Matrícula que tem seus atributos: o Id_matrícula como identificador, a Nota e a Data.
+
+Temos a entidade Turma que tem seus atributos: o Id_turma como identificador, o Turno e o Nível.
+
+Temos a entidade Curso que tem seus atributos: o Id_curso como identificador e o Idioma.
+
+Temos a entidade Professor que tem seus atributos: o Cpf como identificador, o Nome e a Titulação.
+
+As relações entre as entidades são as seguintes:
+
+A entidade Aluno se relaciona com a entidade Matrícula, onde um aluno possui uma matrícula (1,1) e uma matrícula pertence a um aluno (1,1).
+
+A entidade Matrícula se relaciona com a entidade Turma, onde uma matrícula está em uma ou mais turmas (1,n) e uma turma contém uma ou mais matrículas (1,n).
+A entidade Matrícula também se relaciona com a entidade Curso, onde uma matrícula está inscrita em um ou mais cursos (1,n) e um curso recebe uma ou mais matrículas (1,n).
+
+As entidades Curso e Turma também se relacionam, sendo que uma turma faz parte de um curso (1,1) e um curso contém uma ou mais turmas (1,n).
+
+A entidade Professor se relaciona com a entidade Curso, onde um professor pode ter um ou mais cursos (1,n) e um curso pode ter um ou mais professores (1,n).
+A entidade Professor também se relaciona com a entidade Turma, onde um professor pode ter uma ou mais turmas (1,n) e uma turma pode ter um ou mais professores (1,n).
+
+
+
+
+
+
+
+
+
+
+
+
